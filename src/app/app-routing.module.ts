@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LogoComponentComponent } from './pages/logo-component/logo-component.component';
+import { GridComponentComponent } from './pages/grid-component/grid-component.component';
 
 const routes: Routes = [
-  {path: 'home',component:LogoComponentComponent}, 
-  {path: '',component:LogoComponentComponent}, 
+  {path: 'home',component:GridComponentComponent}, 
+  {path: '',component:GridComponentComponent}, 
 ];
 
 @NgModule({

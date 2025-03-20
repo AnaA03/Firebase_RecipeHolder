@@ -1,21 +1,21 @@
-.text-recipe {
-    font-size: 20px;
+ .text-recipe {
+    font-size: 25px;
 }
 .text-link {
     font-style: italic;
-    font-weight: light;
+    font-size: 20px;
 }
 .welcome-section {
-    margin-top: 10px;
+    margin-top: 50px;
 }
 .img-section {
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
-.img-section img{
-    width: 60%;
+/* .img-section img{
+    width: 100%;
     height: auto;
-}
+} */
 .img-mobileViewrecipe {
     width: 95%;
 }
@@ -28,12 +28,35 @@
             .img-section img{
                 display: none;
             }
+            .img-section img{
+                width: 100%;
+                height: auto;
+            }
+            .container{
+                animation: fadeIn 1.5s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                  transform: scale(0.9);
+                }
+                to {
+                  opacity: 1;
+                  transform: scale(1);
+                }
+              } 
+
         } 
+
          
         /* Media Query for low resolution  Tablets, Ipads */
          @media (min-width: 481px) and (max-width: 767px) {
             .img-mobileViewrecipe {
                 display: none;
+            }
+            .img-section img{
+                width: 60%;
+                height: auto;
             }
         } 
          
@@ -42,12 +65,20 @@
             .img-mobileViewrecipe {
                 display: none;
             }
+            .img-section img{
+                width: 60%;
+                height: auto;
+            }
         }
           
         /* Media Query for Laptops and Desktops */
          @media (min-width: 1025px) and (max-width: 1280px){
             .img-mobileViewrecipe {
                 display: none;
+            }
+            .img-section img{
+                width: 60%;
+                height: auto;
             }
         } 
          
@@ -56,5 +87,10 @@
             .img-mobileViewrecipe {
                 display: none;
             }
-        } 
-        
+            .img-section img{
+                width: 60%;
+                height: auto;
+            }
+        }  
+
+       
